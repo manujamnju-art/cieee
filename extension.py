@@ -7,11 +7,11 @@ else:
     filename = "program1"
     extension = "pdf"
 
-if extension == "jpeg" or extension == "png":
+if extension in ["jpeg", "png"]:
     print("It is an image!!")
-elif extension == "HDR" or extension == "mp4":
+elif extension in ["HDR", "mp4"]:
     print("It is a video!!")
-elif extension == "pdf" or extension == "txt":
+elif extension in ["pdf", "txt"]:
     print("It is a document!!")
 else:
     print("Invalid output")
